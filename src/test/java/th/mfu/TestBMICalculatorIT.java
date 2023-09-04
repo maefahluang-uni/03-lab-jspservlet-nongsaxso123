@@ -59,13 +59,13 @@ public class TestBMICalculatorIT {
 
             // Check that the HTTP response code is 200 OK.
             int responseCode = response.getStatus();
-            assertEquals(200, responseCode);
+            assertEquals(200, responseCode); 
 
             String jsonResponse = response.readEntity(String.class);
             assertThat(jsonResponse, CoreMatchers.containsString("Result is 22"));
 
             assertThat(jsonResponse, CoreMatchers.containsString("normal"));
-            _logger.info("IT1 test passed");
+            _logger.info("IT2 test passed");
         }
     }
 

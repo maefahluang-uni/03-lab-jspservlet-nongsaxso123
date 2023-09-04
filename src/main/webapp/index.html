@@ -2,8 +2,12 @@
 <body>
 <h2>BMI Calculator</h2>
 <form action="/calbmi" method="POST">
-    <input type="text" name="weight" placeholder="Weight in kg" required><br>
-    <input type="text" name="height" placeholder="Height in metre" required><br>
+    <label for="weight">Weight in kg:</label>
+    <input type="text" id="weight" name="weight" placeholder="Enter your weight" required><br><br>
+
+    <label for="height">Height in meters:</label>
+    <input type="text" id="height" name="height" placeholder="Enter your height" required><br><br>
+
     <input type="submit" value="Calculate">
 </form>
 </body>
